@@ -19,3 +19,4 @@ EXPOSE 18000
 # Command to run the app
 CMD ["node", "src/index.js"]
 
+#Adding some change for watching automatic trigger of pipeline
