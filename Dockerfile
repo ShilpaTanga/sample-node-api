@@ -20,3 +20,4 @@ EXPOSE 18000
 CMD ["node", "src/index.js"]
 
 #Adding some change for watching automatic trigger of pipeline
+# Checking second time git push-> change in git repo -> Trigger piepline automatically-> new image is created in ECR
