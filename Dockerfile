@@ -21,3 +21,4 @@ CMD ["node", "src/index.js"]
 
 #Adding some change for watching automatic trigger of pipeline
 # Checking second time git push-> change in git repo -> Trigger piepline automatically-> new image is created in ECR
+#Done with everything want to check whether everything works well,
