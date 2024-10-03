@@ -1,0 +1,19 @@
+version: 0.0
+os: linux
+
+files:
+  - source: /
+    destination: /var/app
+
+hooks:
+  BeforeInstall:
+    # Stop any running Docker container with the name 'sample-node-api'
+    - location: scripts/stop_container.sh
+      timeout: 300
+      runas: root
+
+  AfterInstall:
+    # Start the new container with the latest image
+    - location: scripts/start-sample.sh
+      timeout: 300
+      runas: root
