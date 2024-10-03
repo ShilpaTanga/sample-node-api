@@ -20,7 +20,7 @@ docker rm sample-node-api || true
 
 # Run the new container
 echo "Starting a new container with the latest image..."
-docker run -d --name my-nodejs-app -p 80:3000 $ECR_REPO_URL:$IMAGE_TAG
+docker run -d --name sample-node-api -p 80:3000 $ECR_REPO_URL:$IMAGE_TAG
 
 # Check if the container is running
 if [ "$(docker ps -q --filter name=sample-node-api)" ]; then
